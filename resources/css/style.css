@@ -314,7 +314,7 @@ header {
 
 @media screen and (min-width:900px) {
   .hero-container .content-left {
-    width: clamp(60%, 1100px, 70%);
+    width: clamp(1100px, 65.4%, 70%);
     height: 840px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 0px 0px 300px 0px;
@@ -330,10 +330,9 @@ header {
   }
 
   .hero-container .content-right {
-
     position: relative;
     /* width: calc(100% - 1100px); */
-    width: clamp(30%,580px,40%);
+    width: clamp(580px,34.6%,40%);
   }
 
   .user-review img {
@@ -365,7 +364,7 @@ header {
 
   /* feature */
 
-.feature-container .image-container {
+.content-left.image-container {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.25rem;
@@ -397,8 +396,15 @@ header {
 @media screen and (min-width:900px) {
 
   .feature-container {
+    width: fit-content;
     padding: 60px 40px;
     gap: 20em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-container.content-left {
+    margin-right: unset;
   }
 
   .feature-container .content-left {
