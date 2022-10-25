@@ -6,87 +6,143 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./resources/css/style.css">
   <title>PEEKIN</title>
+  <!-- meta description -->
+  <meta name="PEEKIN" content="PEEKIN LANDING PAGE">
 </head>
 <body>
-  <section class="container hero-container bg-yellow">
-    <header>
-      <div class="logo"></div>
-      <div class="menu">
-        <nav></nav>
-      </div>
-    </header>
-    <div class="hero-text">
-      <h1>Give Honest Reviews on Properties in you locality.</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor</p>
-      <div class="button-container">
-        <a href="#" class="appstore"><img src="" alt=""></a>
-        <a href="#" class="playstore"><img src="" alt=""></a>
-      </div>
-    </div>
-    <div class="desktop-image">
-      <div class="image-container user-review">
-        <img src="" alt="">
-        <div class="detail">
-          <i>H. Adcock</i>
-          <div class="rating"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero ultrices dis a arcu. Eu rhoncus, non suspendisse nec consequat enim. Proin natoque malesuada donec convallis lectus euismod nec, in.</p>
-          <div class="review-media">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <a href=""><img src="" alt=""></a>
-            <video src=""></video>
-            <video src=""></video>
-            <video src=""></video>
-            <video src=""></video>
-            <video src=""></video>
+  <!-- hero & nav starts -->
+  <section class="container hero-container">
+    <div class="content-left">
+      <header>
+        <div class="logo">
+          <img id="logo" src="./resources/images/Logo Colour_dark_bg.svg" alt="PeekIn logo">
+        </div>
+        <nav class="desktop-nav">
+          <ul>
+            <li class="desktop-nav-list">
+              <a href="#" class="nav-link" id="home">Home</a>
+            </li>
+            <li class="desktop-nav-list">
+              <a href="#" class="nav-link">Features</a>
+            </li>
+            <li class="desktop-nav-list">
+              <a href="#" class="nav-link">Services</a>
+            </li>
+            <li class="desktop-nav-list">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li class="desktop-nav-list">
+              <a href="#" class="nav-link">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- mobile menu starts -->
+        <div class="menu">
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
+          <nav class="navbar">
+            <div class="navbar-top">
+              <a href="#" class="nav-branding"><img src="./resources/images/Logo yellow_dark_bg.svg" alt=""></a>
+              <div class="hamburger-black">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#" class="nav-link text-yellow">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Features</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <script src="./resources/js/menu.js"></script>
+      <!-- mobile menu ends -->
+      <div class="hero-text text-white">
+        <h1>Give Honest Reviews on Properties in you locality.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor</p>
+        <div class="button-container">
+          <a href="#" class="appstore"><img src="./resources/images/appstore.svg" alt=""></a>
+          <a href="#" class="playstore"><img src="./resources/images/playstore.svg" alt=""></a>
         </div>
       </div>
     </div>
+    <!-- hidden on mobile -->
+    <div class="desktop content-right">
+      <div class="image-container user-review">
+          <div class="review-media">
+            <img src="./resources/images/user-review.png" alt="" id="review">
+            <img src="./resources/images/./hero-desktop-img-2.jpg" alt="" id="image-2">
+          </div>
+      </div>
+    </div>
   </section>
+  <!-- hero ends -->
+  <!-- feature starts -->
   <section class="container feature-container">
-    <div class="image-container">
-      <img src="" alt="" id="mobileapp">
+    <div class="image-container content-left">
+      <img src="./resources/images/mobile app.png" alt="PeekIn mobile app screenshot" id="mobileapp">
     </div>
-    <div class="feature-text">
-      <h2 class="upppercase">features</h2>
-      <h3>Meet Peekin</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur </p>
+    <div class="content-right">
+      <div class="feature-text">
+        <h2 class="uppercase text-yellow">features</h2>
+        <h3>Meet Peekin</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur </p>
+      </div>
+      <section class="feature">
+        <div class="feature-detail one">
+          <div class="feature-icon"><img src="./resources/images/lamp-alert.svg" alt="lamp icon"></div>
+          <span>Feature One</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, </p>
+        </div>
+        <div class="feature-detail two">
+          <div class="feature-icon"><img src="./resources/images/lamp-alert.svg" alt="lamp icon"></div>
+          <span>Feature Two</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, </p>
+        </div>
+        <div class="feature-detail three">
+          <div class="feature-icon"><img src="./resources/images/lamp-alert.svg" alt="lamp icon"></div>
+          <span>Feature Three</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, </p>
+        </div>
+        <div class="feature-detail four">
+          <div class="feature-icon"><img src="./resources/images/lamp-alert.svg" alt="lamp icon"></div>
+          <span>Feature Four</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, </p>
+        </div>
     </div>
-    <section class="feature">
-      <div class="feature-detail one">
-        <div class="feature-icon"><img src="" alt=""></div>
-        <span>Feature One</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, </p>
-      </div>
-      <div class="feature-detail two">
-        <div class="feature-icon"><img src="" alt=""></div>
-        <span>Feature Two</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, </p>
-      </div>
-      <div class="feature-detail three">
-        <div class="feature-icon"><img src="" alt=""></div>
-        <span>Feature Three</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, </p>
-      </div>
-      <div class="feature-detail four">
-        <div class="feature-icon"><img src="" alt=""></div>
-        <span>Feature Four</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, </p>
-      </div>
     </section>
   </section>
+  <!-- feature ends -->
+  <!-- step starts -->
   <section class="container step-container">
-    <h2 class="uppercase">how it works</h2>
-    <h3>It starts with this steps</h3>
-    <div class="image-container">
-      <img id="" src="" alt="">
-      <img id="" src="" alt="">
-      <img id="" src="" alt="">
+    <div class="content-left">
+      <h2 class="uppercase text-yellow">how it works</h2>
+      <h3>It starts with this steps</h3>
+      <div class="image-container">
+        <img class="img-step" id="topleft" src="./resources/images/steps-image-1.jpg" alt="">
+        <img class="img-step" id="bottomleft" src="./resources/images/steps-image-3.jpg" alt="">
+        <img class="desktop-image" id="bottomleft-desktop" src="./resources/images/steps-image-4.jpg" alt="">
+        <img class="img-step" id="right" src="./resources/images/steps-image-2.jpg" alt="">
+      </div>
     </div>
-    <section class="step bg-yellow">
+    <section class="step bg-yellow text-white content-right">
       <div class="step-detail one">
         <span>01</span>
         <h4>Monitor</h4>
@@ -105,79 +161,80 @@
     </section>
   </section>
   <section class="container testimonial-container">
-    <h2 class="uppercase">testimonials</h2>
-    <h3>Let's see what people says about PeekIn</h3>
+    <div class="text">
+      <h2 class="uppercase text-yellow">testimonials</h2>
+      <h3>Let's see what people says about PeekIn</h3>
+    </div>
+    <!-- carousel will start (future) -->
     <div class="carousel">
       <div class="testimonial">
         <div class="testimonial-box one">
-          <img src="" alt="" class="photo">
+          <img src="./resources/images/testimonial-photo.png" alt="" class="photo">
           <p>“We have been waiting on this product and now that we have installed a few. We think it will make the industry by storm.”</p>
           <span class="name">Ryan Oliver</span>
           <span class="title">Design Manager Kiluna</span>
         </div>
         <div class="testimonial-box two">
-          <img src="" alt="" class="photo">
-          <p>“We have been waiting on this product and now that we have installed a few. We think it will make the industry by storm.”</p>
-          <span class="name">Ryan Oliver</span>
-          <span class="title">Design Manager Kiluna</span>
-        </div>
-        <div class="testimonial-box three">
-          <img src="" alt="" class="photo">
-          <p>“We have been waiting on this product and now that we have installed a few. We think it will make the industry by storm.”</p>
-          <span class="name">Ryan Oliver</span>
-          <span class="title">Design Manager Kiluna</span>
+          <img src="./resources/images/testimonial-photo2.png" alt="" class="photo">
+          <p>“Thank you for introducing me to Peekin!  We like how the system gives updates to us and the homeowner as well to give us a real time update on how everything is working.”</p>
+          <span class="name">Glandina Samantha</span>
+          <span class="title">CEO JobDesk United, LLC</span>
         </div>
       </div>
-      <div class="dots"></div>
     </div>
+    <!-- carousel ends -->
   </section>
+  <!-- step ends -->
+  <!-- review starts -->
   <section class="container review-container bg-yellow">
-    <div class="content">
-      <h2 class="txt-white">Give Honest Reviews on Properties</h2>
-      <p class="txt-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor</p>
+    <div class="content-left">
+      <div class="text">
+        <h2 class="text-white">Give Honest<br>Reviews on<br>Properties</h2>
+        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor</p>
+      </div>
       <div class="button-container">
-        <a href="#" class="appstore"><img src="" alt=""></a>
-        <a href="#" class="playstore"><img src="" alt=""></a>
+        <a href="#" class="appstore"><img src="./resources/images/appstore.svg" alt=""></a>
+        <a href="#" class="playstore"><img src="./resources/images/playstore.svg" alt=""></a>
       </div>
     </div>
-    <div class="desktop-img">
-      <img src="" alt="">
+    <div class="desktop-image">
+      <img id="review-desktop" src="./resources/images/review desktop img.png" alt="">
     </div>
   </section>
-  <footer>
-    <div class="footer-text">
-      <h2 class="uppercase txt-white">peekin</h2>
-      <p class="txt-white">Lorem Ipsum Dolor Text Alte Unduos Lorem Ipsum De Unduos Lorem psum Dolor Lorem Ipsum Dolor Text Alte Unduo Ipsum De.</p>
+  <!-- review ends -->
+  <!-- footer starts -->
+  <footer class="bg-black">
+    <div class="footer-left">
+      <div class="footer-text">
+        <h2 class="uppercase text-white">peekin</h2>
+        <p class="text-white">Lorem Ipsum Dolor Text Alte Unduos Lorem Ipsum De Unduos Lorem psum Dolor Lorem Ipsum Dolor Text Alte Unduo Ipsum De.</p>
+      </div>
+      <div class="button-container">
+        <a href="#" class="appstore"><img src="./resources/images/appstore.svg" alt=""></a>
+        <a href="#" class="playstore"><img src="./resources/images/playstore.svg" alt="" id="grayscale"></a>
+      </div>
     </div>
-    <div class="button-container">
-      <a href="#" class="appstore"><img src="" alt=""></a>
-      <a href="#" class="playstore"><img src="" alt=""></a>
-    </div>
-    <div class="footer-nav txt-white">
+    <div class="footer-nav text-white">
       <div class="nav1">
-        <span class="txt-yellow">Packages</span>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 1</a></li>
-        </ul>
+        <span class="text-yellow text-bold">Packages</span>
+        <a href="#">Link 1</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 1</a>
       </div>
       <div class="nav2">
-        <span class="txt-yellow">Links</span>
-        <ul>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
+        <span class="text-yellow text-bold">Links</span>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">FAQs</a>
       </div>
       <div class="address">
-        <p>Office Address</p>
+        <p class="text-yellow text-bold">Office Address</p>
         <p>Sample address<br>Sample address line</p>
 
         <div class="contact">
-          <p>Contact</p>
+          <p class="text-bold">Contact</p>
           <p>(124) 456-7890</p>
           <p>hello@company.com</p>
         </div>
@@ -192,5 +249,6 @@
       <i>(c) Copyright 2022 PeekIn</i>
     </div>
   </footer>
+  <!-- footer ends -->
 </body>
 </html>
