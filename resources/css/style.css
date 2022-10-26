@@ -17,6 +17,19 @@
        url('../fonts/jost-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/jost-v14-latin-regular.svg#Jost') format('svg'); /* Legacy iOS */
 }
+/* jost-500 - latin */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/jost-v14-latin-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/jost-v14-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/jost-v14-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/jost-v14-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/jost-v14-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/jost-v14-latin-500.svg#Jost') format('svg'); /* Legacy iOS */
+}
 
 /* reset */
 
@@ -130,6 +143,7 @@ i {
 
   h1 {
     font-size: 64px;
+    line-height: 67.65px;
   }
 
   .container {
@@ -282,6 +296,7 @@ header {
 
     .nav-link {
       font-weight: 400;
+      font-size: 16px;
     }
 
     #home {
@@ -370,12 +385,17 @@ header {
   margin-top: 1.25rem;
 }
 
+#mobileapp {
+  max-width: 100%;
+}
+
 .content-right {
   padding: 0 20px 80px 20px;
 }
 
 .feature-text p {
   font-size: 20px;
+  font-weight: 500;
   line-height: 1.33em;
 }
 
@@ -385,10 +405,17 @@ header {
   align-items: center;
   gap: 1.625em;
   margin: 1.25em;
+
+}
+
+.feature-detail span {
+  font-weight: 700;
 }
 
 .feature-detail p {
   max-width: 260px;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 /* feature desktop */
@@ -397,7 +424,7 @@ header {
 
   .feature-container {
     width: fit-content;
-    padding: 60px 40px;
+    padding: 60px 0px;
     gap: 20em;
     margin-left: auto;
     margin-right: auto;
@@ -415,6 +442,7 @@ header {
 
   #mobileapp {
     min-width: 390px;
+    max-width: 590px;
   }
 
   .feature-container .content-right {
@@ -436,7 +464,12 @@ header {
     padding: 20px;
   }
 
-  .feature-detail p, .feature-detail span {
+  .feature-detail span {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .feature-detail p {
     font-size: 24px;
     font-weight: 500;
   }
@@ -491,12 +524,16 @@ header {
 
   .step-detail {
     padding: 40px 25px;
-    margin: 20px;
+    margin: 10px 20px;
+  }
+
+  .step-detail.one {
+    margin-top: 96px;
   }
 
   .step-detail span {
     display: block;
-    margin-top: 1.2em;
+    /* margin-top: 1.2em; */
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
@@ -577,23 +614,33 @@ header {
       "a c";
       column-gap: 30px;
       padding: 20px;
-      max-width: 480px;
+      min-width: 480px;
+      min-height: 270px;
       padding-bottom: 60px;
     }
 
     .step-detail span {
       grid-area: a;
-      margin-top: 0;
+      /* margin-top: 0; */
     }
 
     .step-detail h4 {
       margin-bottom: 1em;
+    }
+
+    .step-detail p {
+      font-size: 24px;
     }
   }
 
   /* testimonial */
   .testimonial-container {
     padding: 20px;
+  }
+
+  .testimonial-container h3 {
+    font-weight: 700;
+    letter-spacing: normal;
   }
 
   .carousel {
@@ -740,6 +787,11 @@ header {
       padding: 100px 200px 0px 200px;
       display: flex;
       justify-content: space-between;
+    }
+
+    .review-container h2 {
+      font-size: 42px;
+      line-height: 49.43px;
     }
 
     #review-desktop {
