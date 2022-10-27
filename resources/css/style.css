@@ -387,6 +387,7 @@ header {
 
 #mobileapp {
   max-width: 100%;
+  padding-bottom: 20px;
 }
 
 .content-right {
@@ -476,6 +477,10 @@ header {
 }
 
   /* step */
+
+  .step-container h3 {
+    font-size: 42px;
+  }
 
   .step-container .image-container {
     position: relative;
