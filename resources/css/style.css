@@ -667,6 +667,24 @@ header {
     }
   }
 
+  /* smaller screen laptop */
+  @media screen and (min-width:900px) and (max-width:1679px) {
+    #topleft {
+      width: clamp(250px, 350px, 400px);
+    }
+
+    #bottomleft-desktop {
+      width: clamp(300px, 100%, 500px);
+    }
+
+    #right {
+      width: clamp(300px, 75%, 400px);
+      height: clamp(300px, 75%, 400px);
+      left: clamp(180px,10rem,260px);
+    }
+  }
+
+
   /* testimonial */
   .testimonial-container {
     padding: 20px;
