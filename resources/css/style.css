@@ -682,6 +682,10 @@ header {
       height: clamp(300px, 75%, 400px);
       left: clamp(180px,10rem,260px);
     }
+    /* .step-container .content-left::before {
+      left: clamp(270px, 380px, 476px);
+    } */
+
 
     .step-container .content-right {
       padding-left: 7.5em;
