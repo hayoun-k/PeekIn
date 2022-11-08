@@ -1,3 +1,7 @@
+.desktop-nav-list, .nav-item {
+  list-style-type: none;
+}
+
 .italic {
   font-style: italic;
 }
@@ -5,3 +9,71 @@
 .underline {
   text-decoration: underline;
 }
+
+h1,h2,h3,p,ul,li,th,td {
+  font-family: 'Jost', sans-serif;
+}
+
+h1 {
+  margin-bottom: 2em;
+  /* font-size: 2.5rem; */
+  text-align: center;
+}
+
+h2,h3,p {
+  margin-block: 1.33em;
+}
+
+h2 {
+  font-size: 1.5em;
+  letter-spacing: normal;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+ul, li {
+  margin-block: 1em;
+}
+
+li {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 0.5em;
+}
+
+.privacy-policy {
+  width: 75%;
+  margin-inline: auto;
+  margin-top: 5em;
+  padding-bottom: 150px;
+}
+
+table, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #ededed;
+}
+
+td {
+  padding: 5px;
+}
+
+tr.colored {
+  background-color: #f9fafc;
+}
+
+@media screen and (min-width: 900px) {
+  .hero-container .content-left {
+    height: 150px;
+    width: 100%;
+  }
+  
+  .privacy-policy {
+    width: 66%;
+  } 
+  }
